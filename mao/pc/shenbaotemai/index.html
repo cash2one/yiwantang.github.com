@@ -1,0 +1,136 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>青春_专题_一猫汽车网</title>
+	<meta name="description" content="description"/>
+	<meta name="keywords" content="keywords"/>
+	<link rel="stylesheet" type="text/css" href="css/global.css?v=1.0"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css?v=1.0"/>
+</head>
+
+<body>
+<section class="head-con">
+	<div class="top-con body-center clearfix">
+		<ul class="top-left">
+			<li><a href="http://www.emao.com/">一猫首页</a><i></i></li>
+			<li><a href="http://mall.emao.com/">商城首页</a></li>
+		</ul>
+		<ul class="top-right ul-noLogin" style="">
+			<li><a class="reg-link" act="register" href="http://i.emao.com/?act=register">注册</a><i></i></li>
+			<li><a class="login-link" act="login" href="http://i.emao.com/?act=login">登录</a></li>
+		</ul>
+		<ul class="sign-up ul-hasLogin" style="display: none;">
+			<li>
+				<a target="_blank" class="avatar" href="http://i.emao.com/homecp/index">
+					<img src="http://s.emao.net/images/common/uc_user_avatar.png" title="访问我的空间">
+				</a>
+				<a target="_blank" class="logined" href="http://i.emao.com/homecp/index"></a>
+				<i></i>
+			</li>
+			<li><a class="logout-link" act="logout" href="http://i.emao.com/?act=logout">退出</a></li>
+		</ul>
+		<a href="javascript:void(0)" class="wx-box">
+			<dl>
+				<dt>进入新车商城手机端</dt>
+				<dd>
+					<img src="http://s.emao.net/tmall/build/pc/static/common/img/qr-wx_f766c3a.jpg" alt="">
+				</dd>
+			</dl>
+		</a>
+	</div>
+</section>
+
+<!--top-box-->
+<section class="top-box"></section>
+<!--/top-box end-->
+
+<!--huod-box-->
+<section class="huod-box">
+	<h2 class="h-txt">专场亮点</h2>
+</section>
+<!--/huod-box end-->
+
+<!--waig-box-->
+<section class="waig-box">
+	<h2 class="h-txt">优惠政策</h2>
+</section>
+<!--/waig-box end-->
+
+<!--bm-form-->
+<section class="baoming-wrap" id="bm-form">
+	<div class="baoming-box">
+		<h2>参与报名</h2>
+		<p class="p-box name-box le-mar">
+			<label for="input-name">
+				姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名
+			</label>
+			<input type="text" name="name" id="name-input" class="bor w1 name-input" placeholder="请填写姓名" pattern="^([\u4e00-\u9fa5]+|([a-zA-Z]+\s?)+)$" required/>
+		</p>
+		<p class="p-box">
+			<label for="input-name">
+				手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机
+			</label>
+			<input type="text" name="phone" id="phone-input" class="bor w2 phone-input" placeholder="请填写手机" pattern="^1[3,4,5,7,8]\d{9}$" required/>
+			<span class="yz-btn" id="yz-btn">发送验证码</span>
+		</p>
+		<p class="p-box le-mar">
+			<label for="input-name">
+				验&nbsp;证&nbsp;码
+			</label>
+			<input type="text" name="yzm" id="yzm-input" class="bor w3 yzm-input">
+			<span class="yzm-time" id="time">
+				60s
+			</span>
+		</p>
+		<p class="p-box">
+			<label for="input-brand">
+				品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌
+			</label>
+			<input type="text" name="brand" id="brand-input" class="bor w4 brand-input" value="北汽坤宝" disabled>
+		</p>
+		<p class="p-box le-mar">
+			<label for="input-name">
+				选择车系
+			</label>
+			<select class="prov pro-box" id="cx-input" name="chexi"></select>
+		</p>
+		<p class="p-box">
+			<label for="input-name">
+				选择车型
+			</label>
+			<select class="city city-box" id="style-input" name="style" disabled="disabled"></select>
+		</p>
+		<p class="tj-box">
+			<button type="button" class="submit-btn" id="form-submit" onclick="$.formSubmitExtend()">
+				点击提交
+			</button>
+		</p>
+	</div>
+</section>
+<!--/waig-box end-->
+
+<!--ck-box-->
+<section class="ck-box">
+	<h2 class="h-txt">联系我们</h2>
+	<div class="w-box">
+		<a href="" target="_blank" class="po-link-1">北汽坤宝满足不了你？请点这里</a>
+		<a href="" target="_blank" class="po-link-2">旧车换新车！请点这里</a>
+	</div>
+</section>
+<!--/ck-box end-->
+
+<!--foot-con-->
+<section class="foot-con">
+	版权所有：北京一猫汽车科技有限公司 电话：010-62691688 © 2015 www.emao.com 京ICP证150082号 京公网安备：11010802016480
+</section>
+<!--/foot-con end-->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/public.common.js"></script>
+<script src="js/layer.2.1.min.js"></script>
+<script src="js/main.js?v=2.0"></script>
+<script src="js/statistic.js?v=1.0"></script>
+</body>
+</html>

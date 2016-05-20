@@ -1,0 +1,51 @@
+body { background: #fff; max-width: 640px; background: url(../images/bg.jpg); }
+h1 { display: none; }
+
+/*top-box*/
+.top-box, .top-box img { width: 100%; }
+
+/*h-txt*/
+.h-txt { display: none; }
+
+/*huod-box*/
+.huod-box, .huod-box img { width: 100%; }
+
+/*wrap-box*/
+.waig-box, .waig-box img { width: 100%; }
+
+/*ck-box*/
+.ck-box, .ck-box img { width: 100%; }
+
+/*top-con*/
+.top-con { width: auto; }
+.foot-con { height: auto; line-height: 150%; padding: 5% 0; }
+
+
+/*baoming-box*/
+.baoming-wrap { background: #f8f4e8; padding: 7% 0; overflow: hidden; }
+.baoming-wrap h2 { padding-left: 3%; font-size: x-large; color: #5c3900; margin-bottom: 7%; }
+.baoming-box { position: relative; width: 100%; margin: 0 auto; }
+.baoming-box label { font-size: large; float: left; width: 26%; padding-right: 2%; line-height: 37px; text-align: right; }
+.baoming-box .name-box { overflow: hidden; }
+.baoming-box .bor { float: left; background: none; border: #32312f 1px solid; height: 35px; padding: 0 1%; font-size: large; }
+.baoming-box select { width: 38%; height: 35px; border: #32312f 1px solid; background: none; font-size: large; }
+.baoming-box .pro-box { margin-right: 20px; }
+.baoming-box .brand-input { color: #535353; background: #eee; font-size: large; text-align: center; }
+.w1 { width: 60%; }
+.w2 { width: 35%; }
+.w4 { width: 35%; }
+.baoming-box .w3 { width: 35%; border-right: 0; }
+.yz-btn { display: inline-block; vertical-align: bottom; width: 25%; height: 37px; background: #5b3600; cursor: pointer; font-size: small; color: #fff; line-height: 37px; text-align: center; }
+.yzm-time { display: inline-block; vertical-align: middle; width: 25%; height: 35px; color: #fff; font-size: 25px; font-weight: 400; line-height: 35px; background: #a0a0a0; text-align: center; border: #32312f 1px solid; border-width: 1px 1px 1px 0; }
+.baoming-box .cha { position: absolute; right: 10px; top: -5px; font-size: 40px; color: #999; cursor: pointer; }
+
+.p-box { width: 100%; margin-bottom: 4%; overflow: hidden; }
+.le-mar { margin-right: 45px; }
+
+/*submit-btn*/
+.tj-box { clear: both; text-align: center; overflow: hidden; }
+.submit-btn { display: inline-block; vertical-align: middle; background: #5b3600; font-size: large; color: #fff; border: 0; border-radius: 5px; padding: 3% 8%; margin-top: 5px; }
+
+.p-link { display: block; width: 84%; margin: 0 auto 4%; background: #e99501; text-align: center; font-size: large; color: #fff; border-radius: 5px; padding: 2% 0; }
+
+#share2weixin { display: none; }

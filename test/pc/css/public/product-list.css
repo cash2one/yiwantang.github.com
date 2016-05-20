@@ -1,0 +1,164 @@
+.gooditem {
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+    opacity: 0;
+    position: relative;
+    background: #fff;
+    padding: 0;
+    float: left;
+    width: 270px;
+    height: 300px;
+    color: #666;
+}
+.gooditem:hover .item-border {
+    display: block;
+}
+.gooditem:hover .good-box{
+    transform:translateY(-9px);
+}
+.gooditem:hover .item-bottom {
+    display: block;
+}
+.gooditem:hover .car-price-box h3 {
+    padding-top: 2px;
+}
+.gooditem:hover .car-price-em{
+    height: 29px;
+    line-height: 29px;
+}
+.good-box{overflow: hidden; background:#fff; border: 1px solid #e5e5e5; height: 298px;}
+.item-border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 10px #ccc;
+    z-index: 4;
+    display: none;
+}
+.item-cont {
+    z-index: 2;
+    padding: 20px 26px;
+    position: relative;
+    text-align: center;
+}
+.deals_badge {
+    width: 50px;
+    position: absolute;
+    left: 17px;
+    top: 14px;
+    z-index: 9;
+}
+.deals_badge img {
+    width: 50px;
+}
+.car-img {
+    text-align: center;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    padding-top:50px;
+}
+.car-img img {
+    width:200px;
+    position: relative;
+    top: -20px;
+}
+.car-price-box {
+    position: relative;
+    height: 96px;
+}
+.car-price-box h3 {
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    height: 20px;
+    padding-top: 20px;
+    padding-bottom: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.car-price-addcs{
+    position: relative;
+    top: 10px;
+}
+.car-price-em {
+    height: 30px;
+    overflow: hidden;
+    display: block;
+    line-height: 30px;
+}
+.car-price-box em {
+    color: #ed3f36;
+    font-size: 16px;
+    font-weight: 700;
+}
+.car-price-p {
+    height: 20px;
+    line-height: 20px;
+}
+.car-dealer{
+    font-size:13px;
+
+    color:#333;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    margin-left: -134px;
+    width: 268px;
+    text-align: center;
+}
+.mark-down {
+    font-size: 13px;
+    color: #22c883;
+    background: url(http://s.emao.net/tmall/build/pc/static/home/img/down_cebfb71.png) no-repeat left center;
+    padding-left: 10px;
+}
+.item-bottom {
+    height: 50px;
+    background: #ed3f36;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    z-index: 10;
+    width: 100%;
+    display: none;
+}
+
+.car-minute {
+    padding: 8px 10px 0 10px;
+    line-height: 17px;
+    height: 36px;
+}
+.car-btn {
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    background: #fff;
+    color: #ed3f36;
+    text-align: center;
+    margin: 3px 94px;
+}
+
+.filter-box .f-line .up i, .filter-box .f-line .down i {
+    background: url(http://s.emao.net/tmall/build/pc/static/home/widget/page/homeList/icon-price_a207ee8.png) no-repeat;
+    width: 7px;
+    height: 8px;
+    display: inline-block;
+    margin: 0 6px 0 -4px;
+}
+.filter-box .f-line li.up, .filter-box .f-line li.down {
+    background: #f3f1f0;
+}
+.filter-box .f-line li.up i {
+    background-position: -24px 0;
+}
+.filter-box .f-line li.down i {
+    background-position: -8px 0;
+}

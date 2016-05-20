@@ -1,0 +1,111 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<title>青春_专题_一猫汽车网</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"
+	<meta name="description" content="description"/>
+	<meta name="keywords" content="keywords"/>
+	<link rel="stylesheet" type="text/css" href="css/global.css?v=1.0"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css?v=1.0"/>
+</head>
+
+<body>
+
+<!--top-box-->
+<section class="top-box">
+	<img src="images/p_1.jpg" alt="">
+</section>
+<!--/top-box end-->
+
+<!--huod-box-->
+<section class="huod-box">
+	<h2 class="h-txt">专场亮点</h2>
+	<img src="images/p_2.jpg" alt="">
+</section>
+<!--/huod-box end-->
+
+<!--waig-box-->
+<section class="waig-box">
+	<h2 class="h-txt">优惠政策</h2>
+	<img src="images/p_3.jpg" alt="">
+</section>
+<!--/waig-box end-->
+
+<!--bm-form-->
+<section class="baoming-wrap" id="bm-form">
+	<div class="baoming-box">
+		<h2>参与报名</h2>
+		<p class="p-box name-box">
+			<label for="input-name">
+				姓&nbsp;&nbsp;名
+			</label>
+			<input type="text" name="name" id="name-input" class="bor w1 name-input" placeholder="请填写姓名" pattern="^([\u4e00-\u9fa5]+|([a-zA-Z]+\s?)+)$" required/>
+		</p>
+		<p class="p-box">
+			<label for="input-name">
+				手&nbsp;&nbsp;机
+			</label>
+			<input type="text" name="phone" id="phone-input" class="bor w2 phone-input" placeholder="请填写手机" pattern="^(1(([35][0-9])|(47)|[8][01236789]))\d{8}$" required/>
+			<span class="yz-btn" id="yz-btn">发送验证码</span>
+		</p>
+		<p class="p-box">
+			<label for="input-name">
+				验证码
+			</label>
+			<input type="text" name="yzm" id="yzm-input" class="bor w3 yzm-input">
+			<span class="yzm-time" id="time">
+				60s
+			</span>
+		</p>
+		<p class="p-box">
+			<label for="input-brand">
+				品&nbsp;&nbsp;牌
+			</label>
+			<input type="text" name="brand" id="brand-input" class="bor w4 brand-input" value="北汽坤宝" disabled>
+		</p>
+		<p class="p-box">
+			<label for="input-name">
+				选择车系
+			</label>
+			<select class="prov pro-box" id="cx-input" name="chexi"></select>
+		</p>
+		<p class="p-box">
+			<label for="input-name">
+				选择车型
+			</label>
+			<select class="city city-box" id="style-input" name="style" disabled="disabled"></select>
+		</p>
+		<p class="tj-box">
+			<button type="button" class="submit-btn" id="form-submit" onclick="$.formSubmitExtend()">
+				点击提交
+			</button>
+		</p>
+	</div>
+</section>
+<!--/bm-form end-->
+
+<!--ck-box-->
+<section class="ck-box">
+	<h2 class="h-txt">联系我们</h2>
+	<img src="images/p_4.jpg" alt="">
+	<a href="" target="_blank" class="p-link">
+		北汽绅宝满足不了你？请点这里
+	</a>
+	<a href="" target="_blank" class="p-link">
+		旧车换新车！请点这里
+	</a>
+</section>
+<!--/ck-box end-->
+
+<span id="share2weixin"><img src="images/share.jpg"></span>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/public.common.js"></script>
+<script src="js/layer.2.1.min.js"></script>
+<script src="js/cityselect.js?v=1.0"></script>
+<script src="js/main.js?v=1.0"></script>
+<script src="js/statistic.js?v=1.0"></script>
+</body>
+</html>
