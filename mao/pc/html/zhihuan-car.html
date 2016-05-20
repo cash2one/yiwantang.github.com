@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title></title>
+    <link rel="stylesheet" href="../css/public/global.css">
+    <link rel="stylesheet" href="../css/public/head-foot.css">
+    <link rel="stylesheet" href="../css/public/product-list.css"/>
+    <link rel="stylesheet" href="../css/public/gotop.css"/>
+    <link rel="stylesheet" href="../css/public/jquery-ui.css"/>
+    <link rel="stylesheet" href="../css/zhihuan-car.css">
+</head>
+<body class="bg">
+<!--头部-->
+<div class="n-width100 n-back1 n-header">
+    <div class="n-width1080 n-position">
+        <div class="header-nav n-fl">
+            <ul>
+                <li><a href="http://www.emao.com" target="_blank">首页</a></li>
+                <li><a href="http://news.emao.com/" target="_blank">资讯</a></li>
+                <li><a href="http://auto.emao.com/" target="_blank">车型库</a></li>
+                <li><a  class="header-nav-cur" id="newCarMall" href="http://mall.emao.com/" target="_blank">商城</a></li>
+                <li><a href="http://dealer.emao.com/beijing/" target="_blank">城市站</a></li>
+            </ul>
+        </div>
+        <div class="head-set n-fr" id="user_bar_login">
+            <div class="head-set-link"><!--未登录-->
+                <a href="http://i.emao.com/?callbackUrl=http://127.0.0.1:8080/template/detail/shop-detail.html&amp;act=login#login_wrap" class="head-set-login" title="登录">登录</a>
+                <a href="http://i.emao.com/?act=register&amp;callbackUrl=http://127.0.0.1:8080/template/detail/shop-detail.html#login_wrap" class="head-set-register" title="注册">注册</a>
+            </div>
+            <div class="head-set-my"><!--已登录-->
+                <div class="head-set-name">
+                    <a href="http://i.emao.com/homecp/index/">欢迎您，lqx000</a>
+                </div>
+                <div class="head-set-message" id="slide2">
+                    <p><i class="set-message-icon"></i></p>
+                    <em class="head-set-point" id="all_notice" style="display: inline;"></em>
+                    <ul class="slideCon" style="display: none;">
+                        <li id="notice_num">
+                            <a href="http://i.emao.com//homecp/message/notice/read/1">
+                                <span>消息</span>
+                                <em>23</em>
+                            </a>
+                        </li>
+                        <li id="atme_num">
+                            <a href="http://i.emao.com//homecp/message/user/read/1">
+                                <span>@我</span>
+                                <em></em>
+                            </a>
+                        </li>
+                        <li id="comment_num">
+                            <a href="http://i.emao.com//homecp/message/sys/read/1">
+                                <span>评论</span>
+                                <em></em>
+                            </a>
+                        </li>
+                        <li id="follow_num">
+                            <a href="http://i.emao.com//35630/friend/list_1_1.html">
+                                <span>粉丝</span>
+                                <em></em>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="head-set-handle" id="slide3">
+                    <p><i class="set-handle-icon"></i></p>
+                    <ul class="slideCon" style="display: none;">
+                        <li><a href="http://i.emao.com//homecp/user/userinfo/">账号设置</a></li>
+                        <li><a href="http://i.emao.com//homecp/user/catverify/check/">猫友认证</a></li>
+                        <li><a href="http://i.emao.com/?callbackUrl=http://i.emao.com/homecp/index&amp;act=logout">退出登录</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="n-width100 n-back2 n-nav">
+    <div class="n-width1080 n-nav-content n-clear">
+        <a href="http://www.emao.com/" title="一猫汽车网" alt="一猫汽车网" class="n-logo"></a>
+        <div class="adress-put">
+            <span>所在城市：</span>
+            <span class="adre-font">北京</span>
+            <span class="arrow-down"></span>
+            <div class="adre-tips">
+                <div class="city-hot">
+<span class="pov">
+热&nbsp;门：</span>
+<span class="city">
+<a href="/city/tianjin/" title="天津">天津</a>
+</span>
+                </div>
+                <dl>
+                    <dd>
+<span class="pov">
+直辖市：</span>
+<span class="city">
+<a href="/city/beijing/" title="北京">北京</a>
+<a href="/city/tianjin/" title="天津">天津</a>
+</span>
+                    </dd>
+                    <dd>
+<span class="pov">
+河北：</span>
+<span class="city">
+<a href="/city/handan/" title="邯郸">邯郸</a>
+</span>
+                    </dd>
+                    <dd>
+<span class="pov">
+吉林：</span>
+<span class="city">
+<a href="/city/changchun/" title="长春">长春</a>
+</span>
+                    </dd>
+                    <dd>
+<span class="pov">
+江苏：</span>
+<span class="city">
+<a href="/city/huaian/" title="淮安">淮安</a>
+</span>
+                    </dd>
+                    <dd>
+<span class="pov">
+湖南：</span>
+<span class="city">
+<a href="/city/hengyang/" title="衡阳">衡阳</a>
+</span>
+                    </dd>
+                    <dd>
+<span class="pov">
+陕西：</span>
+<span class="city">
+<a href="/city/xian/" title="西安">西安</a>
+</span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <p class="kf-info">
+            <span class="kf-tel">客服电话：400-890-3881</span><br>
+            <span class="kf-time">周一至周六9:00-19:00</span>
+        </p>
+        <div class="nav-bar">
+            <div class="nav-list">
+                <a class="nav-item nav-select" href="/">
+                    <span class="nav-txt">商城首页</span>
+                </a>
+                <a class="nav-item " href="/city/beijing/car-0-0-0-0-0-0-0-1.html">
+                    <span class="nav-txt">热销车</span>
+                </a>
+                <a class="nav-item " href="/city/beijing/juhuigou/list-0-1.html">
+                    <span class="nav-txt">巨惠购</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部end-->
+
+<!--二手车置换-->
+
+    <div class="zhihuan-h1 page-conter">二手车置换信息</div>
+<div class="zhihuan-car ">
+    <form class="post-bd">
+        <div class="zhihuan-h2">旧车信息</div>
+        <div class="listBox">
+            <div class="neWtext"><em>*</em>车型信息</div>
+            <div class="neWsel">
+                <select><option selected>品牌</option><option>宝马</option></select>
+                <select><option>车系</option><option>宝马</option></select>
+                <select><option>车型</option><option>宝马1</option></select>
+            </div>
+        </div>
+        <div class="listBox">
+            <div class="neWtext">行驶里程</div>
+            <div class="neWsel">
+                <input type="text" class="texLin">
+                <span class="gongli">公里</span>
+            </div>
+        </div>
+        <div class="listBox">
+            <div class="neWtext">首次上牌时间</div>
+            <div class="neWsel">
+                <input type="text" class="texPin"id="firstIncardTime">
+            </div>
+        </div>
+        <div class="listBox">
+            <div class="neWtext">补充说明</div>
+            <div class="neWsel">
+                <textarea name="" placeholder="请对您的车辆状况进行简单描述" class="texTall" id="textarea" cols="30" rows="10"></textarea>
+            <span class="scroll">
+            	<em class="top"></em>
+                <em class="bottom"></em>
+            </span>
+            </div>
+        </div>
+
+        <div class="zhihuan-h2">预购车信息</div>
+        <div class="listBox">
+            <div class="neWtext">车型信息</div>
+            <div class="neWsel">
+                <select><option>品牌</option><option>宝马</option></select>
+                <select><option>车系</option><option>宝马</option></select>
+                <select><option>车型</option><option>宝马1</option></select>
+            </div>
+        </div>
+        <div class="listBox">
+            <div class="neWtext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姓名</div>
+            <div class="neWsel">
+                <input type="text" class="name texTin">
+            </div>
+        </div>
+        <div class="listBox">
+            <div class="neWtext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机</div>
+            <div class="neWsel">
+                <input type="text" class="phone texTin">
+                <div class="gethao">获取短信验证码</div>
+                <div class="gettime">60s后重新发送</div>
+            </div>
+        </div>
+        <div class="listBox">
+            <div class="neWtext">&nbsp;&nbsp;&nbsp;验证码</div>
+            <div class="neWsel">
+                <input type="text" class="name texSin">
+
+            </div>
+        </div>
+        <div class="listBox">
+            <div class="neWtext">预购车城市</div>
+            <div class="neWsel">
+                <select><option selected>省</option><option>北京</option></select>
+                <select><option selected>市</option><option>北京</option></select>
+            </div>
+        </div>
+
+        <div class="listBox">
+            <div class="neWsell">
+                <a href="javascript:;"><input type="button" value="提交" class="sub-btn suBall"></a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--二手车置换end-->
+
+<!--<div class="foot-wish">
+    <div class="sub-wish-wrap">
+        <div class="sub-wish-box">
+            <div class="wish-con">
+                <i class="lf"></i>还没找到您想要的车？<i class="rt"></i>
+            </div>
+            <a href="http://mall.emao.com/?c=index&a=desire" class="wish-submit">提交我的购车愿望</a>
+            <b></b>
+        </div>
+    </div>
+</div>-->
+<!--侧边栏-->
+<div class="rightBar rightBar-show">
+	<ul id="fubox">
+    	<li>
+        	<a class="shop-wish rightBar-item" href="http://mall.emao.com/?c=index&a=desire" target="_blank">
+                <span></span>
+                <p class="con">购车愿望</p>
+            </a>
+            <p class="to">
+                <a href="http://mall.emao.com/?c=index&a=desire" target="_blank">
+                    购车愿望
+                </a>
+            </p>
+        </li>
+        <li>
+        	<a class="zhihuancar rightBar-item" id="" href="javascript:void(0)" target="_self">
+                <span></span>
+                <p class="con">二手车置换</p>
+            </a>
+            <p class="to">
+                <a  href="javascript:void(0)" target="_self">
+                    二手车置换
+                </a>
+            </p>
+        </li>
+        <li>
+        	<a class="ask-online rightBar-item" id="ask-online" href="javascript:void(0)" target="_self">
+                <span></span>
+                <p class="con">咨询</p>
+            </a>
+            <p class="to">
+                <a  href="javascript:void(0)" target="_self">
+                咨询
+                </a>
+            </p>
+        </li>
+        <li>
+        	<a class="order-list rightBar-item" href="http://i.emao.com/homecp/shangcheng/order/" target="_blank">
+                <span></span>
+                <p class="con">订单</p>
+            </a>
+            <p class="to">
+                <a href="http://i.emao.com/homecp/shangcheng/order/" target="_blank">
+                订单
+            </a>
+            </p>
+        </li>
+        <li id="gotop-box">
+        	<div class="gotop-box">
+                <span></span>
+            </div>
+            <p class="to">返回顶部</p>
+        </li>
+    </ul>
+</div>
+<div class="rightBar-bg"></div>
+<!--侧边栏end-->
+<!--尾部-->
+<div class="downbar">
+    <div class="downbar-box page-center">
+        <a class="tejia" target="_blank" href="http://mall.emao.com/entering/">
+            <dl>
+                <dt>特价车源</dt>
+                <dd>特价车源，价格实惠，车险上牌等一条龙服务，让您省钱又省心！</dd>
+            </dl>
+        </a>
+        <a class="pay-icon" target="_blank" href="http://mall.emao.com/entering/">
+            <dl>
+                <dt>支付无忧</dt>
+                <dd>支付宝安全交易，车辆未出库随时退款，让您放心购车。</dd>
+            </dl>
+        </a>
+        <a class="baozheng" target="_blank" href="http://mall.emao.com/entering/">
+            <dl>
+                <dt>提车保证</dt>
+                <dd>确保车源充足，按时交车，让您所见即所得。</dd>
+            </dl>
+        </a>
+        <a class="shouhou" target="_blank" href="http://mall.emao.com/entering/">
+            <dl>
+                <dt>4s店售后服务</dt>
+                <dd>与优质经销商携手，一猫会员专享，为您的爱车保驾护航。</dd>
+            </dl>
+        </a>
+    </div>
+</div>
+<div class="n-width100 n-back1 n-footer">
+    <div class="n-width990 n-footer-top n-clear">
+        <div class="n-footer-link">
+            <dl>
+                <dt>关于我们</dt>
+                <dd><a href="http://www.emao.com/about/index.html" target="_blank">了解一猫</a></dd>
+                <dd><a href="http://www.emao.com/about/zhaopin/index.html" target="_blank">加入喵星球</a></dd>
+                <dd><a href="http://www.emao.com/about/lianxi.html" target="_blank">联系我们</a></dd>
+            </dl>
+            <dl>
+                <dt>用户帮助</dt>
+                <dd><a href="http://www.emao.com/about/sitemap.html" target="_blank">网站地图</a></dd>
+                <dd><a href="http://www.emao.com/about/fankui.html" target="_blank">用户反馈</a></dd>
+            </dl>
+            <dl>
+                <dt>关注我们</dt>
+                <dd><a href="http://weibo.com/p/1006065387056321" target="_blank" class="n-weibo"></a></dd>
+            </dl>
+            <dl>
+                <dt>应用推荐</dt>
+                <dd><a href="http://app.emao.com/" target="_blank">一猫App</a></dd>
+            </dl>
+        </div>
+        <div class="n-footer-code">
+            <ul>
+                <li class="n-footer-mao">一猫App</li>
+                <li class="n-footer-new">一猫汽车</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="n-width100 n-back1 n-record">
+    <span>版权所有：北京一猫汽车科技有限公司 </span>
+    <span class="n-record-site">电话：010-62691688 　© 2016 www.emao.com </span>
+    <a href="http://www.miitbeian.gov.cn" target="_blank">京ICP证150082号 </a>
+    <a class="n-record-num" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020186">公网安备 11010802020186号<i></i></a>
+</div>
+<!--尾部end-->
+</body>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/gotop.js"></script>
+<script src="../js/move.js"></script>
+
+<script>
+    $("#firstIncardTime").datepicker({
+        dateFormat: 'yy-mm-dd',
+        minDate: new Date
+    });
+
+/*返回顶部*/
+(function(){
+	gotop.init();
+})();
+/*移入显示*/
+(function(){
+	var oUl=document.getElementById('fubox');
+	var aLi=oUl.getElementsByTagName('li');
+	for(var i=0;i<aLi.length;i++){
+		aLi[i].index=i;
+		aLi[i].timer=null;
+		aLi[i].onmouseover=function(ev){
+			var oP=getByClass(this,'to')[0];
+			var oP2=getByClass(this,'con')[0];
+			var oSpan=this.getElementsByTagName('span')[0];
+			if(this.index==4){
+				clearTimeout(this.timer);
+				this.timer=setTimeout(function(index){
+					oP.style.display='block';
+					move(oP,{left:-93,opacity:1},{duration:150});
+					oSpan.style.backgroundColor='red';
+				},100);	
+			}else{
+				clearTimeout(this.timer);
+				this.timer=setTimeout(function(index){
+					oP.style.display='block';
+					move(oP,{left:-93,opacity:1},{duration:150});
+					oP2.style.opacity='0';
+					oSpan.style.backgroundColor='red';
+				},100);	
+			}
+		}
+		aLi[i].onmouseout=function(ev){
+			var oP=getByClass(this,'to')[0];
+			var oP2=getByClass(this,'con')[0];
+			var oSpan=this.getElementsByTagName('span')[0];
+			if(this.index==4)
+			{
+				clearTimeout(this.timer);
+				this.timer=setTimeout(function(index){	
+					move(oP,{left:-145,opacity:0},{duration:150});
+					timer1=setTimeout(function(){
+						oP.style.display='none';
+						clearTimeout(timer1);
+					},150)
+					oSpan.style.backgroundColor='';
+				},100);
+			}else{
+				clearTimeout(this.timer);
+				this.timer=setTimeout(function(){
+					move(oP,{left:-145,opacity:0},{duration:150});
+					timer1=setTimeout(function(){
+						oP.style.display='none';
+						clearTimeout(timer1);
+					},150)
+					oP2.style.opacity='1';
+					oSpan.style.backgroundColor='';
+				},100);
+			}
+		}
+	}
+})();
+</script>
+</html>

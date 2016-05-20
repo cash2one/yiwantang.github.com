@@ -1,0 +1,25 @@
+.rightBar-bg{background: #000;width:64px;position:fixed;right: 0;top:0px; bottom:0px;z-index: 99}
+.rightBar {
+	width:64px;
+    position: fixed;
+    top:190px;
+    right:0;
+    z-index: 1000;
+    -webkit-transition: bottom 300ms;
+    -moz-transition: bottom 300ms;
+    -ms-transition: bottom 300ms;
+    -o-transition: bottom 300ms;
+    transition: bottom 300ms;
+}
+
+.rightBar li{text-align:center;margin-bottom:15px;position:relative;}
+.rightBar li span{width:64px;height:40px;display:block;background:url(../../imgs/160426/wish.png) no-repeat 50% 50%;}
+.rightBar li p{color:white;line-height:30px;}
+.rightBar li>p a{width: 100px;height: 40px;display: block;color:#fff;}
+.rightBar li>p{width:100px;height:40px;line-height:40px;background:url(../../imgs/160426/images/fc_bg_03.png) no-repeat;position:absolute;left:-145px;background-size:100% 100%;top:0;opacity:0;display:none;}
+.rightBar li .ask-online span{background:url(../../imgs/160426/zixun.png) no-repeat 50% 50%;}
+.rightBar li .order-list span{background:url(../../imgs/160426/dingdan.png) no-repeat 50% 50%;}
+.rightBar li .gotop-box span{background:url(../../imgs/160426/gotop.png) no-repeat 50% 50%;}
+.rightBar li .zhihuancar span{background:url(../../imgs/160426/zhihuanche.png) no-repeat 50% 50%;}
+.rightBar li span:hover{background-color: red;}
+.rightBar li span:hover{background-color: red;}

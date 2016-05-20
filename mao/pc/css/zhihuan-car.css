@@ -1,0 +1,164 @@
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #211b15 inset;
+    -webkit-text-fill-color: #fff;
+    background: #211b15;
+    color: #fff;
+}
+.ui-datepicker{
+    width: 393px;
+    padding: 0px 0px 0;
+    z-index: 1001!important;
+    position: absolute;
+
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next{
+    top:6px;
+}
+.ui-datepicker .ui-datepicker-prev:hover, .ui-datepicker .ui-datepicker-next:hover{
+    top:5px;
+}
+.ui-datepicker td span, .ui-datepicker td a{
+    display: block;
+    padding: 10px 0px;
+    text-align: center;
+    text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-title {
+    margin: 0;
+    line-height: 32px;
+}
+.ui-datepicker th{
+    padding: 10px 0;
+}
+.ui-icon,
+.ui-widget-content .ui-icon {
+    background-image: url("../imgs/public/jquery-ui/ui-icons_444444_256x240.png");
+}
+.ui-widget-header .ui-icon {
+    background-image: url("../imgs/public/jquery-ui/ui-icons_444444_256x240.png");
+}
+.ui-state-default .ui-icon {
+    background-image: url("../imgs/public/jquery-ui/ui-icons_777777_256x240.png");
+}
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+    background-image: url("../imgs/public/jquery-ui/ui-icons_555555_256x240.png");
+}
+.ui-state-active .ui-icon {
+    background-image: url("../imgs/public/jquery-ui/ui-icons_ffffff_256x240.png");
+}
+.ui-state-highlight .ui-icon {
+    background-image: url("../imgs/public/jquery-ui/ui-icons_777620_256x240.png");
+}
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+    background-image: url("../imgs/public/jquery-ui/ui-icons_cc0000_256x240.png");
+}
+.page-conter{width: 1080px;margin:0 auto;position: relative;}
+.zhihuan-h1{width:1010px;height: 76px;background:#009dd9;line-height: 76px;color: #fff;font-size:30px;padding-left: 70px;}
+.zhihuan-car{width: 1092px;height:874px;margin:0 auto;background: url("../imgs/zhihuan-car/zhihuan-bg.png") no-repeat;
+    margin-bottom:120px;margin-top: 20px; }
+.zhihuan-h2{font-size: 20px;color: #009dd9;border-bottom: 1px solid #009dd9;width: 940px;margin: 0 auto;line-height: 35px;padding-top: 25px;}
+
+.tesTdrive{width:990px;min-height:480px;}
+.neWdrive ul li{width:328px;cursor:pointer;min-height:40px;line-height: 40px;float: left;border: 1px solid #ccc;text-align: center}
+.onCol{background: #54b1ee;border: 1px solid #54b1ee;color:#fff;}
+.neWdrivelistBox{border:1px solid #ccc;border-top: none;min-height:435px;}
+.listFot{color:#686868;line-height: 60px;padding-left: 40px;}
+.listBox{position: relative;left:0;top:0;margin-top:20px;min-height: 30px;line-height: 28px;font-size:16px;}
+.neWtext{width:105px;margin-left:120px;position: absolute;left:0;top:0;text-align: right;line-height: 28px;}
+.neWsel{margin-left: 240px;position:relative;}
+.neWsel .gongli{position:absolute;left:160px;line-height:28px;}
+.neWsel input{padding-right:50px;box-sizing:border-box;}
+.neWsel textarea{resize:none;height:120px;width:400px;}
+.neWsel .scroll{width:17px;height:94%;position:absolute;left:395px;background:#ccc;display:inline-block;border-radius:0 4px 4px 0;}
+.scroll .top{width:0;height:0;display:block;border:6px solid #999;border-top:0;border-left-color:transparent;border-right-color:transparent;position:absolute;top:5px;left:2px;}
+.scroll .bottom{width:0;height:0;display:block;border:6px solid #999;border-bottom:0;border-left-color:transparent;border-right-color:transparent;position:absolute;bottom:5px;left:2px;}
+.listBox select{width:150px;height:28px;border-radius:3px;line-height:28px;margin-right: 12px;cursor: pointer;padding-left: 10px;background: #f8f8f8;}
+.texTin,.texTall,.texSin,.texLin,.texPin{border: 1px solid #ccc;border-radius:3px;width:200px;height:28px;line-height:28px;padding-left: 10px;background: #f8f8f8}
+.listBox select{width:150px;height:28px;border-radius:3px;line-height:28px;margin-right: 12px;cursor: pointer;padding-left: 10px;background: #f8f8f8;}
+select{width:150px;height:28px;border-radius:3px;line-height:28px;margin-right: 12px;cursor: pointer;padding-left: 10px;background: #f8f8f8;color:black;}
+.texTin{float: left;}
+.texTall{width:395px;min-height:50px;background: #fff;}
+.suBall{width:120px;height:40px;line-height:40px;background: #009dd9;color: #fff;border-radius: 5px;cursor: pointer}
+.texPin{background: url("../imgs/zhihuan-car/tine.png") no-repeat right;    background-position: 168px 6px;}
+.neWsell{margin-left:240px;margin-top: 50px;}
+.neWtext em{color: #ff0000;}
+.listInfo{margin-top:30px;margin-bottom: 30px;display: none;}
+.listInfo dl{position: relative;min-height:95px;left:0;top:0;}
+.listInfo dl dt{position:absolute;left:0;top:0;margin-left:317px;display:table;text-align:center;}
+.listInfo dl dt span{display:inline-block;width:187px;height:95px;overflow: hidden;}
+.listInfo dl dt img{width: 100%;  position: absolute;
+    left: 0;
+    top: -20px;}
+.listInfo dl dd{margin-left:533px;line-height: 24px;}
+.listInfo dl dd h5{font-size: 15px;font-weight: 600;}
+.listInfo dl dd s{color: #666;}
+.listColor{color:#da071a}
+.lisTchange{cursor: pointer;color: #408bc2}
+.post-bd input[type=radio]+label{margin-right: 10px;}
+.tesTdrive em{color:#f04845;padding-right: 5px;}
+.refresh{margin-left:50px;}
+.lisTchange q{  display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 0 0 0 5px;}
+.lisTchange q.on{  border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #3a8bc2;
+    border-bottom: none;}
+.lisTchange q.cur{  border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #3a8bc2;
+    border-top: none;}
+.texSin{float: left;}
+.gethao,.gettime{float: left;width: 130px;height: 30px;line-height: 30px;background: #ccc;color: #868686;text-align: center;margin-left: 20px;border-radius: 5px;}
+.gettime{background:#e6e6e6;color: #909090;}
+.gethao{background: #009dd9;color: #fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
