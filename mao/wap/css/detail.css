@@ -5,7 +5,11 @@
 .body-bg {
     background: #f5f5f5;
 }
-
+body.supernatant {
+    height: 100%;
+    overflow: hidden;
+    position:fixed;
+}
 .list-box {
     margin: 12px 3% 0;
 }

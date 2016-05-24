@@ -1,6 +1,7 @@
 function show_sidebar(){
 	$('.se-link').click(function(){
 		$('.sidebar ').show();
+		$('body').addClass('supernatant');
 		$('.side-box').stop().animate({
 			'right':'0px'
 		});
@@ -9,6 +10,7 @@ function show_sidebar(){
 		if(ev.target.className=='sidebar se-sidebar'){
 			setTimeout(function(){
 				$('.sidebar ').hide();
+				$('body').removeClass('supernatant');
 			},400);
 			$('.side-box').stop().animate({
 				'right':'-80%'

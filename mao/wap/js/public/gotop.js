@@ -16,6 +16,7 @@ var gotop={
         this.$el.click(function(){
             window.scrollTo(0,0);
             that.updata();
+            return false;
         })
     },
     updata:function(){

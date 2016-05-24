@@ -28,7 +28,8 @@ var app={
 				var countHigh=$(window).height()+$(window).scrollTop()+20,
 					dHigh=$(document).height();
 				//console.log(countHigh,dHigh);
-				if(countHigh>dHigh){
+				if(countHigh>dHigh-220){
+					$('.down-load').show();
 					that.$loadImg.show();
 					that.loadMore();
 					//that.isLoading=false;

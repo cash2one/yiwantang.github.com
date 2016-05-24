@@ -17,6 +17,7 @@ var sideBar={
 			var that=this;
 			var curKeyId,selectName='全部';
 			$('.filter-btn').click(function(){
+				$('body').addClass('supernatant');
 				that.open();
 				return false;
 			});
@@ -60,29 +61,17 @@ var sideBar={
 				if(that.$el.attr('page')=='home'){
 					that.$tit.html(tit);
 					that.close();
+					that.clearBox();
 				}else{
+					that.$el.attr('page','home');
 					that.$tit.html(tit);
 					that.$filterHome.show();
 				}
 			})
 			this.$clear.click(function(){
-				that.$el.attr('page','home');
-				$('.home-item').each(function(){
-					$(this).find('.fh-val').html('全部');
-				})
-				$('.filterUl-item').each(function(){
-					$(this).find('li').removeClass('selected').first().addClass('selected');
-				})
-				var tmpdata=that.$sidedata;
-				for(var item in tmpdata){
-					tmpdata[item].keyVal=0;
-					tmpdata[item].selectId=0;
-				}
-				var param = app.getparam(1,window.emao.sort);
-				var url=app.geturl(param);
-				app.pushstate(url);
+				that.clearBox();
 			})
-			$('body').click(function(){
+			$('body>*').click(function(){
 				that.close();
 			});
 			this.$box.click(function(e){
@@ -131,6 +120,7 @@ var sideBar={
 			}
 		},
 		bindData:function(){
+			this.$sidedata=new Array();
 			var sort=window.emao.sort-0;
 			if(sort==2) {
 				$('.list-icon').parent().removeClass('priceSort-1').addClass('priceSort-2');
@@ -184,14 +174,34 @@ var sideBar={
 				this.$sidedata.push(tmpdata);
 			}
 		},
+		clearBox:function(){
+			this.$el.attr('page','home');
+			$('.home-item').each(function(){
+				$(this).find('.fh-val').html('全部');
+			})
+			$('.filterUl-item').each(function(){
+				$(this).find('li').removeClass('selected').first().addClass('selected');
+			})
+			var objdata=this.$sidedata;
+			var fdata=window.emao.FDATA;
+			for(var i=0;i<objdata.length;i++){
+				objdata[i].keyVal=0;
+				objdata[i].selectId=0;
+			}
+			var param = app.getparam(1,window.emao.sort);
+			var url=app.geturl(param);
+			app.pushstate(url);
+		},
 		open:function(){
 			this.show();
+			this.$el.attr('page','home');
+			this.$tit.html('筛选');
+			this.$filterHome.show();
 			$('.filterUl-item').hide();
 			this.boxW=this.$box.width();
 			this.$box.animate({'right':0},this.show.bind(this));
 		},
 		close:function(){
-			this.show();
 			this.boxW=this.$box.width();
 			this.$box.animate({'right':-this.boxW},this.hide.bind(this));
 		},
@@ -200,6 +210,7 @@ var sideBar={
 		},
 		hide:function(){
 			this.$el.hide();
+			$('body').removeClass('supernatant');
 		},
 		changePage:function(keyVal,pageName){
 			//$('.filterUl-item').hide();

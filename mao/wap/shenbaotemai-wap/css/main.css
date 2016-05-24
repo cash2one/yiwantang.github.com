@@ -28,7 +28,7 @@ h1 { display: none; }
 .baoming-box label { font-size: large; float: left; width: 26%; padding-right: 2%; line-height: 37px; text-align: right; }
 .baoming-box .name-box { overflow: hidden; }
 .baoming-box .bor { float: left; background: none; border: #32312f 1px solid; height: 35px; padding: 0 1%; font-size: large; }
-.baoming-box select { width: 38%; height: 35px; border: #32312f 1px solid; background: none; font-size: large; }
+.baoming-box select { width: 38%; height: 35px; border: #32312f 1px solid; background: none; font-size: large;-webkit-appearance: menulist;}
 .baoming-box .pro-box { margin-right: 20px; }
 .baoming-box .brand-input { color: #535353; background: #eee; font-size: large; text-align: center; }
 .w1 { width: 60%; }
