@@ -1,5 +1,4 @@
 (function () {
-	
     var f, h, g, c, a, e, d;
     f = function () {
         var j = function (k) {
@@ -880,7 +879,7 @@
                         o[l].className = "islider-dot";
                         o[l].setAttribute("index", l);
                         if (l === this.slideIndex) {
-                            o[l].className += " active";
+                            o[l].className += " active"
                         }
                         o[l].addEventListener("click", function () {
                             var p = parseInt(this.getAttribute("index"));
@@ -956,5 +955,4 @@
     }
 
     setInterval(b, 100)
-	
 }());

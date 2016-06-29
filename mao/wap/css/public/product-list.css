@@ -65,13 +65,12 @@
 
 }
 .gooditem .mall-car-info .car-lit .car-na_me{
-    height:60px;
+    height:30px;
     line-height: 30px;
     margin-right: 5px;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .gooditem .mall-car-info .car-lit p em{
 	width:18px;height:16px;display:inline-block;background:url(../../img/home/shangjia.png);background-size:100% 100%;
@@ -191,6 +190,7 @@
     color: #999;
 }
 .side-box {
+    overflow: hidden;
     position: absolute;
     height: 100%;
     width: 80%;

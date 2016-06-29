@@ -6,10 +6,10 @@
         if(url.indexOf("http://mall.m.emao.com")==0){
             return true;
         }
-        if(url.indexOf("http://i.m.emao.com/register")>-1){
+        if(url.indexOf("http://passport.m.emao.com/register/")>-1){
             return true;
         }
-        if(url.indexOf("http://i.m.emao.com/login")>-1){
+        if(url.indexOf("http://passport.m.emao.com/login")>-1){
             return true;
         }
         if(url.indexOf("http://passport.emao.com")>-1){

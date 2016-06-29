@@ -53,6 +53,7 @@ body.supernatant {
     line-height: 50px;
     height: 50px;
     vertical-align: text-bottom;
+    width: 33.3%;
 }
 .filter-tit .tit {
     font-size: 17px;
@@ -63,7 +64,7 @@ body.supernatant {
     overflow: hidden;
     overflow-y: auto;
     position: absolute;
-    top: 66px;
+    top: 60px;
     bottom: 0;
     width: 100%;
 }
@@ -156,3 +157,45 @@ body.supernatant {
 .noMore,.sub-wish-wrap,.down-load{
     display: none;
 }
+.side-CXlist{
+    width: 53%;
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+
+    background: #fff;
+}
+.CX-listbg{
+    width: 28px;
+    height: 61px;
+    background: url("../img/detail/shaixuan.png") no-repeat;
+    position: absolute;
+    background-size: 100% 100%;
+    left: -27px;
+    top: 15px;
+
+}
+.CX-listbox{
+    overflow: hidden;
+    overflow-y: auto;
+    width: 130%;
+    max-height: 300px;
+}
+.filterUl-CXitem li{
+    margin: 0 10px;
+    width: 68%;
+    padding: 9px 0 9px 0;
+    text-align: center;
+    border-bottom: 1px solid #b3b3b3;
+    color: #4d4d4d;
+    font-size: 12px;
+}
+.filterUl-CXitem .selected span {
+    background: url(http://s.emao.net/tmall/build/m/static/gmobile/widget/page/homeList/sidebar/select_a1e2942.png) no-repeat right center;
+    background-size: auto 24px;
+    margin-right: 0;
+    display: block;
+}
+.disabled{color: #585353; }

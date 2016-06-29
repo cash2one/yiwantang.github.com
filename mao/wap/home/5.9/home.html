@@ -158,6 +158,7 @@
         
          <!--定位导航-->
         <div class="leftnav">
+            <p class="fixedP"></p>
         	<ul class="lfnav-ul box borderbox" style="width: 540px;">
         		<li class="lfnav-li lfnav-li-recomcar selected" data-id="recomcar">
         			<span class="lfnav-item lfnav-item-recomcar">一猫推荐</span>
@@ -923,19 +924,19 @@
     <script type="text/javascript" src="../../js/islider.js"></script>
     <script type="text/javascript" src="../../js/show_sidebar.js"></script>
     <script type="text/javascript" src="../../js/show_nav.js"></script>
+    <script type="text/javascript" src="../../js/header-coolie.js"></script>
 	<script type="text/javascript">
 		$(function(){
-			/*回到顶部*/
 			(function(){
+                /*回到顶部*/
 				gotop.init();
+                /*记录头部cookie*/
+                header.init();
 			})();
 			/*轮播*/
 			(function(){
 				var list = [
-					{
-						url: "http:\/\/huodong.m.emao.com\/mall\/French3.html",
-						content: "../../img/home/100.jpg",
-					}, {
+					 {
 						url: "http:\/\/mall.m.emao.com\/car\/2897.html?type=ykj",
 						content: "../../img/home/101.jpg",	
 					}
@@ -948,9 +949,16 @@
 					duration: 5000,
 					isAutoplay: true,
 				};
-			  
 				var islider = new iSlider(opts);
 				islider.addDot();
+                window.onload = function(){
+                    $.each(list,function(key,item){
+                        if(key == 0){
+                            var h = $('#js_focusPic').find('img').css('height');
+                            $('#js_focusPic').children('ul').css('height',h);
+                        }
+                    });
+                }
 			})();
 			/*导航显示及定位*/
 			(function(){

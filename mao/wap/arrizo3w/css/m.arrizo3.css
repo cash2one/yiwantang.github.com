@@ -1,0 +1,113 @@
+/*html reset*/
+html,body{-webkit-user-select:none;user-select:none;font-family:"\5FAE\8F6F\96C5\9ED1","Microsoft YaHei","\5B8B\4F53","SimSun";background:#FFF;color:#000;font-size:0.28rem;}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;height:100%;}
+body{margin:0;line-height:1;-webkit-font-smoothing:antialiased;height:100%;-webkit-overflow-scrolling:touch;}
+a,img{-webkit-touch-callout:none;}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}
+audio,canvas,progress,video{display:inline-block;vertical-align:baseline;}
+audio:not([controls]){display:none;height:0;}
+[hidden],template{display:none;}
+svg:not(:root){overflow:hidden;}
+a{background:transparent;text-decoration:none;-webkit-tap-highlight-color:transparent;color:#000;}
+a:active{outline:0;color:#FF6831;}
+abbr[title]{border-bottom:1px dotted;}
+b,strong{font-weight:700;}
+dfn{font-style:italic;}
+mark{background:#ff0;color:#000;}
+small{font-size:80%;}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+sup{top:-.5em;}
+sub{bottom:-.25em;}
+img{border:0;vertical-align:middle;}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}
+pre{overflow:auto;white-space:pre;white-space:pre-wrap;word-wrap:break-word;}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em;}
+button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0;}
+button{overflow:visible;}
+button,select{text-transform:none;}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}
+button[disabled],html input[disabled]{cursor:default;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+input{line-height:normal;}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto;}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}
+fieldset{border:1px solid #DCDCDC;padding:0;margin:0;}
+legend{border:0;padding:0;}
+textarea{overflow:auto;resize:vertical;}
+optgroup{font-weight:700;}
+*{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+* html .clearfix,* + html .clearfix{zoom:1;}
+ul,li{list-style:none;}
+input,select{font-family:"Microsoft YaHei";}
+input,button,select,textarea{resize:none;outline:none;}
+.clearfix:after{clear:both;display:block;visibility:hidden;height:0;line-height:0;content:"";}
+.clearfix:after,.clearfix:before{content:"";display:table;}
+.clearfix:after{clear:both;}
+.clearfix{*zoom:1;}
+/*rem reset*/
+.topic-wrap,.wap-footer{ width:6.4rem;min-width:6.4rem; margin:0 auto;font-size:0.28rem;}
+#share2weixin{ display:none;}
+
+/*topic style*/
+#background-cover{display:none;z-index:5; width:100%; height:100%; position:fixed; top:0; left:0; background:#000;filter:alpha(opacity=55);-moz-opacity:0.55;opacity:0.55;}
+
+.m-topic{ padding-bottom:1.05rem;}
+.m-topic img{ width:100%;}
+
+.wap-footer{ position:fixed; bottom:0; left:50%; margin-left:-3.2rem; height:1.34rem;color:#FFF; line-height:1.34rem;}
+.wap-footer img{ width:100%;}
+
+/*表单提交*/
+.from-packets{position:fixed;top:0;left:0; width:100%; height:100%;text-align:center;display:table; z-index:20;}
+.packets-box{margin:0 auto;display:table-cell;vertical-align:middle;height:100%;}
+.packets-cell{width:5.6rem; border:0.02rem #B6B0B1 solid; background:#FFF; color:#310013; margin:0 auto; position:relative;height:95%;}
+
+.packets-cell h5{ font-size:0.45rem;height:14%; font-weight:bold; padding:0; display:block; position:absolute; top:0; left:0; width:100%; display:table-cell; vertical-align:middle;}
+.packets-cell h5 strong {height:100%;
+display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
+-webkit-box-align: center;-moz-box-align: center;-ms-flex-align: center;
+-webkit-align-items: center;  align-items: center;
+-webkit-box-pack: center;  -moz-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;justify-content: center;
+}
+
+.cell-data{ overflow-y:auto;height:86%;position:absolute; top:14%; left:0; width:100%;}
+
+.cell-data p{ text-align:left; margin-left:0.44rem; padding-bottom:0.32rem;}
+.cell-data p span,.cell-data p cite,.cell-data p i{display:inline-block; vertical-align:middle; font-style:normal;}
+.cell-data p span{ width:1.30rem;  text-align:right; margin-right:0.1rem;}
+.cell-data p .input-txt{ border:0.02rem #989898 solid; background:#FFF;font-size:0.28rem; height:0.55rem;line-height:0.55rem;padding:0 0.08rem;vertical-align:middle;}
+.cell-data p i{ text-align:center;background:#4E0032; color:#CBBBC2; vertical-align:middle;}
+.cell-data select{height:0.55rem; padding-left:0.1rem;}
+
+#packet-1{ width:3.24rem; }
+#packet-2{ width:3.24rem; }
+.send-seccode{width:1.68rem; padding:0; height:0.55rem; line-height:0.55rem;}
+#packet-3{ width:1.56rem; }
+.left-time{width:1.44rem; padding:0; height:0.55rem; line-height:0.55rem;}
+#packet-4{ width:2rem; }
+#form_prov{ width:2rem; }
+#form_city{ width:2rem; }
+#form_district{ width:2rem; }
+#form_dealer{ width:3.24rem; }
+.cell-data p.packets-bottom{ padding-bottom:0.3rem;padding-top:0.1rem; text-align:center;}
+.packet-submit{background:#4E0032; color:#FFF; width:2.4rem; line-height:0.7rem;font-size:0.30rem; border-radius:0.08rem;-moz-border-radius:0.08rem;-webkit-border-radius:0.08rem; border:none;}
+
+/*提交成功*/
+.from-succeed{position:fixed;top:0;left:0; width:100%; height:100%;text-align:center;display:table; z-index:20;}
+.succeed-box{margin:0 auto;display:table-cell;vertical-align:middle;}
+.from-succeed p{margin:auto;width:5.6rem;height:1.72rem;color:#310013;border-radius:0.08rem;-moz-border-radius:0.08rem;-webkit-border-radius:0.08rem;line-height:1.72rem;background:#FFF;position:relative; text-align:center;}
+
+/*关闭按钮*/
+.succeed-close,.packets-close{ position:absolute; top:0.2rem; right:0.2rem;display:inline-block; width:0.4rem; height:0.4rem; background:url(../images/p-close.png) no-repeat center; background-size:90%; z-index:20;}
+.from-succeed{display:none;}
+.from-packets{display:none;}
+
+body.supernatant {
+    height: 100%;
+    overflow: hidden;
+    position:relative;
+}

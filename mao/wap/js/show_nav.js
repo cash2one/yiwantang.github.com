@@ -115,6 +115,7 @@ var app={
     init:function(list){
         this.$el=$('.leftnav');
         this.$navul=this.$el.find('ul');
+        this.$navp=this.$el.find('p');
         this.$navli=this.$el.find('li');
         this.$navitem=this.$el.find('.lfnav-item');
         this.$levelnav=$('.level-nav');
@@ -161,11 +162,18 @@ var app={
         var id=this.list.selectId;
         $('.lfnav-li-'+id).addClass(selectedCls).siblings().removeClass(selectedCls);
         this.updataFix();
+        var index = $('.leftnav .selected').index();
+        if(index >= 3){
+            this.$navul.css('left',-((index-3)*95)+'px');
+        }
+
+
     },
     updataFix:function(){
         var top=this.$win.scrollTop();
         this.offsetTop=this.$el.offset().top;
         top>=this.offsetTop-60?this.$navul.addClass(fixedCls):this.$navul.removeClass(fixedCls);
+        top>=this.offsetTop-60?this.$navp.addClass(fixedCls):this.$navp.removeClass(fixedCls);
     },
     updateScrollTop:function(){
         var id=this.list.selectId;

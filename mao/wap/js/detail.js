@@ -12,7 +12,7 @@ var app={
 			var that=this;
 			$('.list-tab .list-icon').click(function(){
 				that.sortBtnClick($(this).parent());
-                return false;
+				return false;
 			})
 		},
 		scrollHander:function(){
@@ -22,6 +22,7 @@ var app={
 				$('.load-img').css("display","none");
 				return false;
 			}
+			$('.down-load').css("display","block");
 			var that=this;
 			clearTimeout(this.scrollTimer);
 			this.scrollTimer=setTimeout(function(){
@@ -38,8 +39,8 @@ var app={
 		},
 		loadMore:function(){
 			var that=this;
-			var param = this.getparam(window.emao.page+1,window.emao.sort);
-			var url=this.geturl(param);
+			var param=sideBar.getparam(window.emao.page+1);
+			var url=sideBar.geturl(param);
 			$.ajax({
 				async: false,
 				cache: false,
@@ -57,7 +58,6 @@ var app={
 					window.emao.page=window.emao.page+1;
 				}
 			});
-			this.pushstate(url);
 		},
 		bindCtr:function(){
 			var that=this;
@@ -95,80 +95,9 @@ var app={
 			}
 			window.emao.sort=pricesort;
 			window.emao.page=1;
-			var param = this.getparam(1,pricesort);
-			var url=this.geturl(param);
-			$.ajax({
-				async: false,
-				cache: false,
-				type: "GET",
-				url: window.URL.mall_m+'/?c=wapsearch&a=onlygoods',
-				data: param,
-				error: function () {
-				},
-				success: function (data) {
-					$('#hid_more').remove();
-					$('.noMore.center.noMoreResult').css("display","none");
-					$('.pro-list').html(data);
-				}
-			});
-			this.pushstate(url);
+			var param = sideBar.getparam(window.emao.page);
+			var url=sideBar.geturl(param);
+			location.href=url;
 		},
-		getparam:function(page,sortprice){
-			var url_sellType=0;
-			var url_brandId=0;
-			var url_price=0;
-			var url_carriageId=0;
-			var url_carFrom=0;
-			var url_priceSort=0;
-			var url_isacitvity=0;
-			var fdata=window.emao.FDATA;
-			for(var item in fdata){
-				if(fdata[item].keyId=="sellType"){
-					url_sellType=fdata[item].selectId;
-				}
-				if(fdata[item].keyId=="brandId"){
-					url_brandId=fdata[item].selectId;
-				}
-				if(fdata[item].keyId=="price"){
-					url_price=fdata[item].selectId;
-				}
-				if(fdata[item].keyId=="carriageId"){
-					url_carriageId=fdata[item].selectId;
-				}
-				if(fdata[item].keyId=="carFrom"){
-					url_carFrom=fdata[item].selectId;
-				}
-			}
-			var param={"cityid":window.emao.mall_cityId,"page":page,"pricesort":sortprice,"goodstype":url_sellType,"brandid":url_brandId,"carriageid":url_carriageId,"priceid":url_price,"seller":url_carFrom};
-			return param;
-		},
-		geturl:function(param){
-			var url =  '/city/'+window.city.pinyin+ '/car';
-			url += '-';
-			url += param.goodstype;
-			url += '-';
-			url += param.brandid;
-			url += '-';
-			url += param.carriageid;
-			url += '-';
-			url += param.priceid;
-			url += '-';
-			url += param.seller;
-			url += '-';
-			url += 0;
-			url += '-';
-			url += param.pricesort;
-			url += '-1.html';
-			return url;
-		},
-		pushstate:function(url){
-			if(history.pushState){
-				history.pushState(null,'',window.URL.mall_m+url);
-			}else{
-				location.href=window.URL.mall_m+url;
-			}
-		},
-
 	};
 	app.init();
-	sideBar.init();
