@@ -44,7 +44,7 @@ body.supernatant {
 .act-bg10{background: url("../imgs/act-bg10.jpg") no-repeat center top;height:539px;}
 .center-auto{width: 1200px;margin:0 auto;}
 .center-v{position:absolute;width: 1200px;left: 50%;margin-left: -600px;}
-.act_prize{top:1241px;width:534px;height:284px;margin-left:67px;}
+.act_prize{top:1246px;width:534px;height:284px;margin-left:67px;}
 .act_qidai img{width: 534px;height: 284px;}
 .Rollfont{height: 40px;border-bottom: 1px solid  #fcc290;line-height:40px;font-size: 16px;color: #ffa456;}
 .Rollfont span{width: 172px;text-align: center;display: block;float: left;overflow: hidden}
@@ -56,8 +56,8 @@ body.supernatant {
 .action_nav:after{display: block;content: "";clear:both;}
 .action_nav .act_item {width:110px;float: left;height: 60px;line-height: 60px;margin-left:30px;margin-right:30px;font-size: 28px;color: white;text-align: center; position: relative;cursor: pointer;}
 .action_nav .active .item_inner{height:60px;position:absolute;width:110px;z-index:100;color: #fe7602;}
-.action_nav .active .item_inner:after{width:10px;height:10px;content:"";display:block;background:url("../imgs/xiao.png");position:absolute;left:44%;top:67px;}
-.act_brand{height:auto;border: 1px solid #fe7602;background:#fff;overflow: hidden;margin-top:9px;}
+.action_nav .active .item_inner:after{width:10px;height:10px;content:"";display:block;background:url("../imgs/xiao.png");position:absolute;left:44%;top:65px;}
+.act_brand{height:auto;border: 1px solid #fe7602;background:#fff;overflow: hidden;margin-top:2px;}
 .act_brand h3{ font-size: 16px;color: #333;padding-left:20px;font-weight:500;line-height:38px;}
 .brand-list{     width:584px;
     float: left;
@@ -76,12 +76,19 @@ body.supernatant {
     padding-right: 5px;
 }
 
-.reqiqiu{width: 200px;height: 230px;position: fixed;top:45px;right:0;z-index:999;background:url("../imgs/reqiqiu.png") no-repeat;}
-
+.reqiqiu{width:220px;height:223px;position: fixed;
+    top:50%;margin-top:-155px;right:-176px;z-index:999;background:url("../imgs/reqiqiu.png") no-repeat;
+    transition:right 0.5s;
+    -moz-transition:right 0.5s; /* Firefox 4 */
+    -webkit-transition:right  0.5s; /* Safari and Chrome */
+    -o-transition:right  0.5s; /* Opera */
+}
+.reqiqiu:hover{
+    right:0;}
 .brand-list .org_color{color: #fe7602;cursor: pointer;margin-top: 10px;margin-right:0;float: right}
-.brand-list li{float: left;  width: 50px;  margin-right: 16px;  padding: 0;  border: 0; /*margin-top: 11px;*/ }
-.brand-list li img {  width:44px;  height:44px;  }
-.brand-list li p{text-align: center;line-height: 25px;padding-top:5px;width:45px;height:25px;padding-left: 1px;overflow: hidden; text-overflow: ellipsis;}
+.brand-list li{float: left;  width: 55px;  margin-right: 10px;  padding: 0;  border: 0; /*margin-top: 11px;*/ }
+.brand-list li img {  width:44px;  height:44px;margin-left: 6px;  }
+.brand-list li p{text-align: center;line-height: 25px;padding-top:5px;width:55px;height:25px;padding-left: 1px;overflow: hidden; text-overflow: ellipsis;}
 .tab_box{overflow: hidden}
 .tab_box .products-list:nth-child(2n){margin-right: 0;}
 .products-list{width: 591px;height:428px;background:#fff;border: 1px solid #fe7602;margin-top:20px;margin-right: 18px;float: left}
@@ -233,9 +240,9 @@ text-align: center;
 .pro-price-p .mark-down{font-size: 16px;}
 
 
+.sele-list p{    color: #fe7602;}
 
-
-
+.sele-list .org_color p{font-size: 14px;font-weight: 600;}
 
 
 
@@ -360,7 +367,7 @@ text-align: center;
 .car-price-p { height: 20px; line-height: 20px;text-align: center }
 .car-dealer { bottom: -25px; color: #333; font-size: 13px; left: 50%; margin-left: -134px; position: absolute;
     text-align: center; width: 268px; }
-.mark-down {background: rgba(0, 0, 0, 0) url(../imgs/down.png) no-repeat scroll left center; color: #22c883; font-size: 14px; padding-left: 10px; }
+.mark-down { color: #22c883; font-size: 14px; padding-left: 10px; }
 .item-bottom { display: none; background: #ed3f36; bottom: 0; color: #fff;  height: 50px; position: absolute; width: 100%; z-index: 10; }
 .gooditem:hover .item-bottom { display: table; }
 .item-bottom p { display: table-cell; vertical-align: middle; height: 50px; }

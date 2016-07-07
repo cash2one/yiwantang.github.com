@@ -1,0 +1,74 @@
+html{font-size: 12px;color: #333}
+body,body *{font-family:"\5FAE\8F6F\96C5\9ED1";}
+html,body{ height:100%}
+body{min-width:990px;height:auto;}
+blockquote,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0;border:0;outline:0;background:none;font-family:"\5FAE\8F6F\96C5\9ED1";}
+h1,h2,h3,h4,h5,h6,strong{font-weight:bold;}
+a:hover{text-decoration:none;color:#1f4f88}
+a:focus{outline:0;text-decoration:none}
+.left {float: left}
+*{box-sizing: border-box;margin: 0;padding: 0;}
+li{list-style: none;}
+img{width: 100%;}
+.act_bg1{background: url("../imgs/act-bg1.jpg") no-repeat center top;;height:1000px;position: relative}
+.pick_Btn{width: 280px;height: 70px;position: absolute;left: 50%;    margin-left: 219px;
+    top: 306px;cursor: pointer}
+.invoice_Btn{width: 280px;height: 70px;position: absolute;left: 50%;margin-left: 219px;top:426px;cursor: pointer}
+.page-1000{width: 1000px;margin: 0 auto;}
+.act-head{background: url("../imgs/logo.jpg") no-repeat left;height:145px;}
+.act-max{border: 1px solid #e4e4e4;margin-bottom: 20px;}
+.act-title{height: 72px;border-bottom: 1px solid #fe8033;margin:0 30px;position: relative;}
+.act-title ul{position:absolute;bottom:-1px;    left: 50%;
+    margin-left: -100px;}
+.act-title li{
+    height:40px;float: left;cursor:pointer;line-height: 40px;font-size: 18px;padding: 2px 20px;border: 1px solid #fff;border-bottom: 1px solid #fe8033; }
+.act-title li.act-sel{border: 1px solid #fe8033;border-bottom: 1px solid #fff;}
+.act_bg2{width: 690px;margin:0 auto;}
+.act_bg3{width:435px;margin:0 auto;}
+.act-titles{font-size: 20px;text-align: center;height: 90px;line-height: 90px;font-weight: 600;}
+.act-input,.act-yzinput{width:380px;height: 50px;border: 1px solid #fe8a02;border-radius: 10px;padding-left: 10px;font-size: 17px;margin-left: 50px;}
+.act-yzinput{width:200px;float: left;}
+.yanzheng-img{width:40%;height:50px;float: left;margin-left: 10px;}
+.yanzheng-img img{height: 50px;}
+.act-yanzheng{overflow: hidden;margin-top:10px;margin-bottom: 10px;}
+.act-bthbg{height:86px;background: #fff;position: fixed;bottom: 0;width: 100%; }
+.act-button{display:block;text-align:center;line-height:55px;width:210px;height: 55px;margin:0 auto;
+    margin-top:50px;margin-bottom:80px;cursor:pointer;background:#fe8a02;color:#fff;border-radius: 10px;padding-left: 10px;font-size: 18px;}
+.act-prompt{line-height: 20px;margin-top:15px;text-align: center;font-size: 14px;}
+.act-state{height: 230px;width: 90%;margin-left: 5%;}
+.act-state img{width:200px;position: relative;top: 40px;left: 50%;margin-left: -100px;}
+.act-stateimg{ width: 217px; height: 217px;position: relative; left: 50%;margin-top:55px;margin-bottom:20px;margin-left: -108px;}
+.act-prompts{text-align: center;font-size: 14px;line-height: 25px;color: #808080;}
+.act-content input{border: 1px solid #e4e4e4;padding-left: 10px;height: 40px;width: 245px;
+    margin-left: 10px;}
+
+.act-content li{height: 40px;line-height: 40px;width: 355px;margin: 0 auto; margin-top:10px;font-size: 16px;}
+.act-content li.act-phone{margin-top: 20px;}
+.act-content li.act-info{width: 200px;font-weight: 600}
+.act-infos li{height: 40px;line-height: 40px;width:390px;font-weight: 600;margin: 0 auto; margin-top:10px;font-size: 16px;}
+input.act-shang{display: block;width:217px; height:217px; background: #000;opacity: 0;  }
+.upload-img{position: absolute;top: 0;z-index: -999;width:217px;height: 217px;left: 50%;margin-left: -108px;overflow: hidden;  }
+.atc-loading{width: 54px;
+    background: url("../imgs/loading.gif") no-repeat;
+    height: 54px;
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -27px;
+    top: 50%;
+    display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

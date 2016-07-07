@@ -1,0 +1,58 @@
+body{background:#EEE;margin:0;padding:0;}
+
+body,html,body *{font-family:"\5FAE\8F6F\96C5\9ED1";}
+body,html{height:100%;position:relative;display:block;max-width:640px;zoom:1;font-size:80%}
+blockquote,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0;border:0;outline:0;background:none;font-family:"\5FAE\8F6F\96C5\9ED1";}
+h1,h2,h3,h4,h5,h6,strong{font-weight:bold;}
+ol,ul{list-style:none}
+a{text-decoration:none;color:#4D4D4D}
+a:hover{text-decoration:none}
+a:focus{outline:0;text-decoration:none}
+#share2weixin{ display:none;}
+/*手机专题当前样式*/
+img{width: 100%;}
+body{background:#f4c21e;}
+.topic-wap{background:#f4c21e;width: 100%;/*height: 100%;overflow: hidden;*/position: relative}
+.act-head{padding-top:22px;}
+.act-text{    width: 76%;
+    height: 91px;
+    margin-top: 20px;background: #fff;margin-left:12%;border-radius: 15px;margin-bottom:10px;}
+.act-h3{color: #4d4d4d;font-size: 18px;font-weight: 600;line-height:35px;padding-left: 5px;padding-right: 5px;text-align: center}
+.act-h3  span{color:#f9544d;font-size:28px;padding-right: 5px;}
+.act-txt{font-size: 16px;color: #4d4d4d;line-height:23px;padding-left: 5px;padding-right: 5px;text-align: center}
+.act-btn{width:130px;height: 130px; position: relative;
+    left: 50%;
+    margin-left: -70px;margin-top: 22px;background: url("../images/act-btn.png") no-repeat;background-size: 100%;}
+.xy-btn,.cj-btn,.dj-btn{width:56%;height:45px;line-height:45px;background:#ff4a53;font-size:20px;margin-top:5px;margin-left: 22%;text-align: center;}
+.xy-btn{color: #fff;
+    margin-top:5%;}
+.cj-btn a{color: #f4c21e;margin-top:4%;display: block}
+.dj-btn a{color: #f4c21e;margin-top:20px;display: block}
+.act-foot{padding-top:43px;background: #f4c21e; position: absolute;}
+.act-footbg{height:60px;background: none;}
+.again {
+    background: url(../images/share-tips.png);
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background-position: center 0;
+    display: none;
+    z-index: 1001;
+}
+#share2weixin img{width: auto;}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="css/m.topic.css?v=1029"/>
+</head>
+
+<body>
+<span id="share2weixin"><img src="images/share.jpg"></span>
+<div id="background-cover" style="display: none;"></div>
+<div class="topic-wap">
+    <div class="act-head">
+        <img src="images/act-head.png"/>
+    </div>
+    <div class="act-text">
+        <p class="act-h3" id="time"><span>0.000</span>秒</p>
+
+        <p class="act-txt">神秘大奖  一秒即得</p>
+    </div>
+    <div class="act-btn" id="btn_play">
+
+    </div>
+    <div class="xy-btn">
+        炫耀一下
+    </div>
+    <div class="cj-btn" style="display: none">
+        <a href="http://huodong.m.emao.com/mall/dreamcar.html">现在去抽奖</a>
+    </div>
+    <div class="dj-btn">
+        <a href="http://huodong.m.emao.com/mall/dreamcar.html">看看大奖有什么？</a>
+    </div>
+    <div class="act-foot">
+        <img src="images/act-foot.png"/>
+    </div>
+    <div class="again" style="display: none;">
+    </div>
+
+</div>
+
+<!-- 专题调用 -->
+<script src="http://s.emao.net/tmall/html/static/wap/js/public/zepto.js"></script>
+<script src="http://s.emao.net/tmall/html/static/wap/js/public/zepto.cookie.min.js"></script>
+<script>
+    var btn_play = $('#btn_play'),
+            timepanel = $('#time span'),
+            time_start = false,
+            timeclock = null;
+    btn_play.on('touchstart', function (e) {
+        e.preventDefault();
+        time_start = new Date().getTime();
+        timeclock = setInterval(function () {
+            var tmptime = new Date().getTime();
+            var finalscore = (( tmptime - time_start) / 1000).toFixed(3);
+            timepanel.html(finalscore);
+        }, 10);
+    }).on('touchend touchcancel', function (e) {
+        e.preventDefault();
+        var time_stop = new Date().getTime();
+        clearTimeout(timeclock);
+        var finalscore = ((time_stop - time_start) / 1000).toFixed(3);
+        timepanel.html(finalscore);
+        time_start = false;
+        if (0.000 < finalscore && finalscore <0.499) {
+            $(".act-txt").html("你是拿脚在玩吧？！");
+        }
+        else if (finalscore>=0.500 && finalscore < 0.699) {
+            $(".act-txt").html("这都想中奖，要决战到天亮的节奏啊！");
+        }
+        else if (finalscore>=0.700 && finalscore  < 0.899) {
+            $(".act-txt").html("与1秒的差距只在呼吸间，再接再厉，你能行！");
+        }
+        else if (finalscore>=0.900 && finalscore  < 0.989) {
+            $(".act-txt").html("碉堡了！快发朋友圈炫耀一下！");
+        } else if (finalscore>=0.990 && finalscore  < 1.009) {
+            var Arr = ["人品爆表！再去试试手气，抽5天4夜港澳双人游~", "人品爆表！再去试试手气，抽iPhone6s Plus~~", "人品爆表！再去试试手气，抽智能光电鼠标~", "人品爆表！再去试试手气，抽立体音响~", "人品爆表！再去试试手气，抽车载吸尘器~", "人品爆表！恭喜您获得车载吸尘器抽奖资格！", "人品爆表！恭喜您获得20元话费抽奖资格！"];
+            var index = Math.floor(Math.random() * Arr.length + 1) - 1;
+            $(".act-txt").html(Arr[index]);
+            $('.cj-btn').show();
+            $('.dj-btn').hide();
+
+        }
+        else if (finalscore>=1.010 && finalscore  < 1.499) {
+            $(".act-txt").html("过了过了！让朋友也来挑战吧！");
+        }
+        else if (finalscore>=1.500) {
+            $(".act-txt").html("你的反射弧比赤道还长");
+        }
+
+    });
+    //绑定再看一次
+    $('.again').click(function(){
+        swiperV.slideTo(0, 1000, true);//设置第三个参数值为true,执行onSlideChangeEnd回调
+    })
+    //给遮罩层绑定关闭响应事件
+    $(".xy-btn").click(function(){
+        $(".again").show();
+    });
+
+    $(".again").click(function(){
+        $(this).hide();
+        $(".swiper-pagination").hide();
+        $(".swiper-button-next-v").hide();
+
+    })
+</script>
+</body>
+</html>

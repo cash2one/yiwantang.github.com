@@ -1,6 +1,6 @@
 html{ font-size: 12px; color: #6b6b6b; }
 body,body *{font-family:"\5FAE\8F6F\96C5\9ED1"; margin: 0; padding: 0; font-size: 1.2rem; }
-html,body{ height:100%} 
+html,body{ height:100%}
 body{min-width:990px;height:auto;}
 
 blockquote,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0;border:0;outline:0;background:none;font-family:"\5FAE\8F6F\96C5\9ED1";}
@@ -28,21 +28,22 @@ a{color: #1f4f88; text-decoration: none; }
 .con_inner{width:90%;margin:auto;}
 .con_wrapper{overflow: hidden;margin-left: -3%}
 .con_item{width:46%;font-size: 0.8rem;text-align: center;color: white;margin-left: 3%;margin-bottom: 3%; display: inline-block;vertical-align: top;}
-.con_item img{border-radius: 5px-ms-border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;}
+.con_item img{border-radius: 5px;-ms-border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;}
 .item_con{max-height: 2.8rem;font-weight: bold;margin-top: 2%;overflow: hidden;}
 .f_tips{width:100%;float: left;font-size: 1.2rem;margin-top: 1rem;margin-bottom: 1rem;}
 body.supernatant {
     height: 100%;
     overflow: hidden;
-    position:relative;
+    position:fixed;
+
 }
 /*Ô¼»Ý×¨Ìâ*/
 .activitybg{position: relative}
 .activitybg li img{vertical-align: top;/*height:115px;*/}
 .act_prize{position: absolute;  top:70%;  width: 100%;  }
-.act_qidai{ width: 98%;  margin-left: 1%;  height: 191px;}
+.act_qidai{ width: 98%;  margin-left: 1%;  height:200px;}
 .act_qidai img{vertical-align: top;}
-.list_lh {  height:200px;  overflow-y:auto;  }
+.list_lh {  height:190px;  overflow-y:auto;  }
 .Rollfont {  height: 33px;border-bottom: 1px dashed #fcc290;line-height:33px;font-size:12px;color: #ffa456;  }
 .Rollfont span {width: 33.3%;/*height:33px;overflow:hidden;*/text-align: center;display: block;float: left;font-size:12px;}
 .action_nav{background: url("../imgs/act-nav.png") no-repeat;height: 40px;line-height: 40px;}
@@ -68,7 +69,7 @@ body.supernatant {
     text-overflow: ellipsis;
     font-size: 12px;}
 .brand-list .org_color {
-/*    color: #fe7602;*/
+    /*    color: #fe7602;*/
     cursor: pointer;
     margin-top: 16px;
     margin-right: 0;
@@ -80,7 +81,7 @@ body.supernatant {
     background: #fff;
     border: 1px solid #fe7602;
     margin-top:5px;
-  margin-left: 1%;
+    margin-left: 1%;
 }
 img{width:100%;}
 .pro_logo{width:30px;height:30px;float: left;margin-left:20px;margin-top:5px;}
@@ -91,40 +92,45 @@ img{width:100%;}
 .hui_logo img{float: left;margin-top:4px;margin-right: 10px;width:30px;}
 .hui_logo p{line-height:30px;float: left;font-size: 12px;}
 .pro_txt{clear: both;line-height:23px;margin-left:20px;margin-right:20px;padding-top:5px;font-size: 12px;
-    height: 51px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     color: #333;
+    height: 47px;
     -webkit-line-clamp: 2;
     overflow: hidden;
 }
 
 .item_box{height: 141px;border-top: 1px solid #fe7602;border-bottom: 1px solid #fe7602;margin-top:7px;margin-left: 10px;margin-right: 10px;}
-.item_list{width:33.3%;float: left;}
+.item_list{width:33.3%;float: left;overflow: hidden;}
 .car_logo{height:53px;margin-top: 5px}
 .car_logo img{width: auto;    position: relative;
     left: 50%;
-    margin-left: -47%;}
+    margin-left: -24%;height:53px;}
 .car-price-box{text-align: center;}
-.pro_num{height:54px;line-height:54px;margin-left:35px;font-size: 14px;float: left;}
+.pro_num{height:57px;line-height:57px;margin-left:35px;font-size: 14px;float: left;}
 .pro_num em{font-size: 17px;color: #fe2719;}
-.yh_btn{width: 96px;height: 32px;float:right;cursor:pointer;margin-right:40px;margin-top:11px;background: #f95c50;line-height:32px;text-align: center;color: #fff;font-size: 16px;border-radius: 5px;}
+.yh_btn{width: 96px;height: 32px;float:right;cursor:pointer;margin-right:40px;margin-top:13px;background: #f95c50;line-height:32px;text-align: center;color: #fff;font-size: 16px;border-radius: 5px;}
 .car-price-box h3 { color: #333; font-size: 13px;height:30px;line-height:30px;
     overflow: hidden; text-overflow: ellipsis; white-space: nowrap;text-align: center }
 .car-price-em { display: block; height:20px; line-height:20px; overflow: hidden;text-align: center }
 .car-price-box em { color: #ed3f36; font-size: 12px; font-weight: 700; }
 .car-price-p { height: 20px; line-height: 20px;text-align: center;overflow: hidden }
-.mark-down {background: rgba(0, 0, 0, 0) url(../imgs/down.png) no-repeat scroll left center; color: #22c883; font-size: 10px; padding-left: 10px; }
+.mark-down {color: #22c883; font-size: 10px; padding-left: 10px; }
 .page-wrap{clear: both;overflow: hidden;}
 .page-wrap .page {
     margin: 25px auto 75px;
     overflow: hidden;
-  float: right;
+    float: right;
     margin-right: 20px;
     display: inline-block;
+    border: none;
+    padding: 0;
 }
 .page-wrap .page li {
     float: left;
+    margin: 0;
+    padding: 0;
+    width: auto;
 }
 .page-wrap .page li a {
     float: left;
@@ -160,7 +166,7 @@ img{width:100%;}
 }
 .page-wrap .page li a.next_not{  background:url("../imgs/nexts.png") no-repeat;  background-size: 100% auto;}
 .page-more{      position: absolute;
-    top: 59%;
+    top: 62%;
     right: 10px}
 .prev_more,.prev_more_not{ background:url("../imgs/prev.png") no-repeat;
     background-size: 100% auto;
@@ -225,14 +231,14 @@ img{width:100%;}
 .pro-price-p .mark-down{font-size: 12px;}
 .top-box{position: relative;}
 .taste{margin-left: 5px;margin-right: 5px;position:absolute;
-    top:47%;}
+    top:52%;}
 .taste img {
     width:32%;
     background: #fff;
     float: left;
     margin-left: 1%;
 }
-.form3{position: absolute;top:65%;margin-left: 14%;}
+.form3{position: absolute;top:76%;margin-left: 14%;}
 .form3 p{height: 35px;line-height: 35px;margin-top: 15px;display: inline-block}
 .form3 p em{font-size: 15px;}
 .form3 p input{width:187px;height: 35px;    border: 1px solid #ffa356;
@@ -252,6 +258,10 @@ img{width:100%;}
     z-index: 100;
 }
 
+
+.sele-list p{    color: #fe7602;}
+
+.sele-list .org_color p{font-size: 14px;font-weight: 600;}
 
 
 
@@ -284,10 +294,12 @@ img{width:100%;}
     display: none;
 
 }
-.car-imgs{width:32%;height: 77px;float: left;    border: 1px solid #fff;
+.car-imgs{width:32%;height: 70px;float: left;    border: 1px solid #fff;
     position: relative;    margin-top: 25px;
     margin-bottom: 36px;}
-.car-imgs img{height:75px;}
+.car-imgs img{height:70px;width: auto;    position: relative;
+    z-index: -3;    left: 50%;
+    margin-left: -47px;}
 .car-xuan {
     border: 1px solid #fd7601;
 }
@@ -308,13 +320,13 @@ img{width:100%;}
     bottom: 0;
     z-index: 10;
     width: 20px;
-    height:10px;
+    height:13px;
 }
 .car-xuan .xuanze {
     display: block;
 }
-.wrap_box2 .car-imgs{margin-right:22px;}
-.wrap_box2 .car-imgs img{height:75px;}
+.wrap_box2 .car-imgs{margin-right:22px;
+    height: 75px;}
 .wrap_box2 .car-imgs:nth-child(2){margin-left:50px;}
 .bao-head { height:30px;line-height:30px;font-size:15px; color: #fff; background: #fe7602;padding-left: 10px;padding-right:10px;}
 .bao-head .close{background: url("../imgs/close.png") no-repeat;width:23px;height: 23px;display: block;float:right;background-size: 100% auto;margin-top:5px;}
@@ -327,18 +339,31 @@ img{width:100%;}
 .baoming-box .form3{
     width: 290px;
     height: 200px;
-    top: 158px;
-    left: 50%;
-    margin-left: -145px;
+    position: static;
+
+
 }
-.baoming_container{display: none;}
+.baoming_container{display: none;height: 100%;position: relative;/*overflow: hidden*/}
 .baoming-wrap .form3 .tj_box{    margin-top:200px;
-    margin-left: -161px;}
+    margin-left: -193px;}
 .wrap_box2 .form3 .tj_box{    margin-top:200px;
-    margin-left: -161px;}
+    margin-left: -193px;}
 .form3 p input.checkss{    width: 25px;
     height: 15px;float: left}
 .form3 input.checkss:nth-child(1) {
     margin-left: 77px;
 }
 .form3 p.xb-input{height:6px;}
+
+
+
+.tab_box .products-list:nth-last-child(1){margin-bottom: 5px;}
+
+#share2weixin{display: none;}
+
+
+
+
+
+
+
